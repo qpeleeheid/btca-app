@@ -1,0 +1,8 @@
+import React from 'react';
+import WiP from '../WiP';
+
+const DigitalFluencyRules = () => {
+  return <WiP title="Règles du test d'aisance numérique" />;
+};
+
+export default DigitalFluencyRules;

@@ -1,5 +1,5 @@
 import React from 'react';
-import WiP from '../WiP';
+import WiP from '../../components/WiP';
 
 const SpatialOrientationTest = () => {
   return <WiP title="Test d'orientation spatiale" />;

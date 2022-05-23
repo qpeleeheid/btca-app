@@ -1,6 +1,6 @@
 import React from 'react';
 import HeaderNav from '../components/Header/HeaderNav';
-import WiP from './WiP';
+import WiP from '../components/WiP';
 
 const Home = () => {
   return (

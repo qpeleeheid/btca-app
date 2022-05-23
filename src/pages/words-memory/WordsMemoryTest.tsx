@@ -1,5 +1,5 @@
 import React from 'react';
-import WiP from '../WiP';
+import WiP from '../../components/WiP';
 
 const WordsMemoryTest = () => {
   return <WiP title='Test de mémoire des mots' />;

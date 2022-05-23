@@ -1,5 +1,5 @@
 import React from 'react';
-import WiP from '../WiP';
+import WiP from '../../components/WiP';
 
 const ReasoningTest = () => {
   return <WiP title='Test de raisonnement' />;

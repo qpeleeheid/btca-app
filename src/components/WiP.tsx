@@ -1,6 +1,6 @@
 import React, { FC } from 'react';
 import { Link } from 'react-router-dom';
-import HeaderNav from '../components/Header/HeaderNav';
+import HeaderNav from './Header/HeaderNav';
 
 interface WiPProps {
   title: string;

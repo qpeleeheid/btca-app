@@ -16,15 +16,21 @@ const HeaderNav = () => {
         </Link>
 
         <div>
-          <HeaderLink title='Aisance Numérique' path='/digital-fluency' />
+          <HeaderLink
+            title='Aisance Numérique'
+            path='/btca-app/digital-fluency'
+          />
           <HeaderLink
             title='Orientation Spatiale'
-            path='/spatial-orientation'
+            path='/btca-app/spatial-orientation'
           />
-          <HeaderLink title='Mémoire des mots' path='/words-memory' />
-          <HeaderLink title='Raisonnement' path='/reasoning' />
-          <HeaderLink title="Détection d'erreurs" path='/errors-detection' />
-          <HeaderLink title='Test Complet' path='/full-test' />
+          <HeaderLink title='Mémoire des mots' path='/btca-app/words-memory' />
+          <HeaderLink title='Raisonnement' path='/btca-app/reasoning' />
+          <HeaderLink
+            title="Détection d'erreurs"
+            path='/btca-app/errors-detection'
+          />
+          <HeaderLink title='Test Complet' path='/btca-app/full-test' />
         </div>
       </nav>
     </header>

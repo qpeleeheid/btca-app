@@ -23,33 +23,36 @@ function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path='/' element={<Home />} />
-        <Route path='/digital-fluency' element={<DigitalFluency />}>
+        <Route path='/btca-app/' element={<Home />} />
+        <Route path='/btca-app/digital-fluency' element={<DigitalFluency />}>
           <Route index element={<DigitalFluencyRules />} />
           <Route path='rules' element={<DigitalFluencyRules />} />
           <Route path='test' element={<DigitalFluencyTest />} />
         </Route>
-        <Route path='/spatial-orientation' element={<SpatialOrientation />}>
+        <Route
+          path='/btca-app/spatial-orientation'
+          element={<SpatialOrientation />}
+        >
           <Route index element={<SpatialOrientationRules />} />
           <Route path='rules' element={<SpatialOrientationRules />} />
           <Route path='test' element={<SpatialOrientationTest />} />
         </Route>
-        <Route path='/words-memory' element={<WordsMemory />}>
+        <Route path='/btca-app/words-memory' element={<WordsMemory />}>
           <Route index element={<WordsMemoryRules />} />
           <Route path='rules' element={<WordsMemoryRules />} />
           <Route path='test' element={<WordsMemoryTest />} />
         </Route>
-        <Route path='/reasoning' element={<Reasoning />}>
+        <Route path='/btca-app/reasoning' element={<Reasoning />}>
           <Route index element={<ReasoningRules />} />
           <Route path='rules' element={<ReasoningRules />} />
           <Route path='test' element={<ReasoningTest />} />
         </Route>
-        <Route path='/errors-detection' element={<ErrorsDetection />}>
+        <Route path='/btca-app/errors-detection' element={<ErrorsDetection />}>
           <Route index element={<ErrorsDetectionRules />} />
           <Route path='rules' element={<ErrorsDetectionRules />} />
           <Route path='test' element={<ErrorsDetectionTest />} />
         </Route>
-        <Route path='/full-test' element={<FullTest />} />
+        <Route path='/btca-app/full-test' element={<FullTest />} />
         <Route path='*' element={<NotFound />} />
       </Routes>
     </BrowserRouter>

@@ -6,7 +6,7 @@ const HeaderNav = () => {
   return (
     <header className='bg-blue shadow-xl'>
       <nav className='container mx-auto p-4 flex items-center justify-between'>
-        <Link className='flex items-center mx-4' to='/'>
+        <Link className='flex items-center mx-4' to='/btca-app/'>
           <img
             className='h-16'
             src={require('../../assets/img/Coats_of_arms_of_Belgium_Military_Forces.png')}

@@ -18,7 +18,7 @@ const NotFound = () => {
             </div>
             <Link
               className='bg-blue text-white rounded p-4 py-2 block transition duration-500 hover:scale-110'
-              to='/'
+              to='/btca-app/'
             >
               Retourner à l'accueil
             </Link>

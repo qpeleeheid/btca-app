@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/static/css/main.3c77e954.css",
+    "main.js": "/static/js/main.9f39b558.js",
+    "static/media/Coats_of_arms_of_Belgium_Military_Forces.png": "/static/media/Coats_of_arms_of_Belgium_Military_Forces.669db8e906b3cf73d40d.png",
+    "index.html": "/index.html",
+    "main.3c77e954.css.map": "/static/css/main.3c77e954.css.map",
+    "main.9f39b558.js.map": "/static/js/main.9f39b558.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.3c77e954.css",
+    "static/js/main.9f39b558.js"
+  ]
+}

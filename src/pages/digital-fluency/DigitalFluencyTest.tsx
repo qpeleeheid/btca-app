@@ -14,6 +14,7 @@ const DigitalFluencyTest = () => {
     if (chosenAnswer === test.questions[currentQuestionIndex].answer) {
       test.rightAnswers = test.rightAnswers + 1;
     } else {
+      console.log(test.questions[currentQuestionIndex]);
       test.errorReports.push(
         new ErrorReport(test.questions[currentQuestionIndex], chosenAnswer)
       );
@@ -28,6 +29,7 @@ const DigitalFluencyTest = () => {
 
   useEffect(() => {
     const timer = setTimeout(() => {
+      console.log(test.questions[currentQuestionIndex]);
       test.errorReports.push(
         new ErrorReport(test.questions[currentQuestionIndex], Answer.noAnswer)
       );

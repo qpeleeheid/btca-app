@@ -28,6 +28,9 @@ const DigitalFluencyTest = () => {
 
   useEffect(() => {
     const timer = setTimeout(() => {
+      test.errorReports.push(
+        new ErrorReport(test.questions[currentQuestionIndex], Answer.noAnswer)
+      );
       setIsFinished(true);
     }, test.duration * 1000);
     return () => clearTimeout(timer);

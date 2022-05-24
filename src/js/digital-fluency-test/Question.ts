@@ -2,6 +2,7 @@ export enum Answer {
   topLine = 0,
   botLine = 1,
   equal = 2,
+  noAnswer = 3,
 }
 
 export class ErrorReport {

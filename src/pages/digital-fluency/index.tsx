@@ -7,8 +7,8 @@ const DigitalFluency = () => {
   return (
     <div className='flex flex-col h-screen'>
       <HeaderNav />
-      <main className='flex-grow bg-light-gray'>
-        <div className='container py-6 px-10 flex flex-col'>
+      <main className='container flex-grow bg-light-gray'>
+        <div className=' py-6 px-10 flex flex-col mx-16'>
           <h1 className='mt-4 text-4xl text-center'>
             Test d'Aisance Numérique
           </h1>

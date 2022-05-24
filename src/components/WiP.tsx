@@ -21,7 +21,7 @@ const WiP: FC<WiPProps> = ({ title }) => {
           </div>
           <Link
             className='bg-blue text-white rounded p-4 py-2 block transition duration-500 hover:scale-110'
-            to='/btca-app/'
+            to='/'
           >
             Retourner à l'accueil
           </Link>

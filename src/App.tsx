@@ -23,45 +23,39 @@ function App() {
   return (
     <HashRouter>
       <Routes>
-        <Route path='/btca-app/' element={<Home />} />
+        <Route path='/' element={<Home />} />
         {/* DIGITAL FLUENCY TEST ROUTES */}
-        <Route path='/btca-app/digital-fluency' element={<DigitalFluency />} />
+        <Route path='/digital-fluency' element={<DigitalFluency />} />
         <Route
-          path='/btca-app/digital-fluency/example'
+          path='/digital-fluency/example'
           element={<DigitalFluencyExample />}
         />
-        <Route
-          path='/btca-app/digital-fluency/test'
-          element={<DigitalFluencyTest />}
-        />
+        <Route path='/digital-fluency/test' element={<DigitalFluencyTest />} />
         {/* SPATIAL ORIENTATION TEST ROUTES */}
-        <Route
-          path='/btca-app/spatial-orientation'
-          element={<SpatialOrientation />}
-        >
+        <Route path='/spatial-orientation' element={<SpatialOrientation />}>
           <Route index element={<SpatialOrientationRules />} />
           <Route path='rules' element={<SpatialOrientationRules />} />
           <Route path='test' element={<SpatialOrientationTest />} />
         </Route>
         {/* WORDS MEMORY TEST ROUTES */}
-        <Route path='/btca-app/words-memory' element={<WordsMemory />}>
+        <Route path='/words-memory' element={<WordsMemory />}>
           <Route index element={<WordsMemoryRules />} />
           <Route path='rules' element={<WordsMemoryRules />} />
           <Route path='test' element={<WordsMemoryTest />} />
         </Route>
         {/* REASONING TEST ROUTES */}
-        <Route path='/btca-app/reasoning' element={<Reasoning />}>
+        <Route path='/reasoning' element={<Reasoning />}>
           <Route index element={<ReasoningRules />} />
           <Route path='rules' element={<ReasoningRules />} />
           <Route path='test' element={<ReasoningTest />} />
         </Route>
         {/* ERRORS DETECTION TEST ROUTES */}
-        <Route path='/btca-app/errors-detection' element={<ErrorsDetection />}>
+        <Route path='/errors-detection' element={<ErrorsDetection />}>
           <Route index element={<ErrorsDetectionRules />} />
           <Route path='rules' element={<ErrorsDetectionRules />} />
           <Route path='test' element={<ErrorsDetectionTest />} />
         </Route>
-        <Route path='/btca-app/full-test' element={<FullTest />} />
+        <Route path='/full-test' element={<FullTest />} />
         <Route path='*' element={<NotFound />} />
       </Routes>
     </HashRouter>

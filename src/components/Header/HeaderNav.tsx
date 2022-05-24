@@ -6,7 +6,7 @@ const HeaderNav = () => {
   return (
     <header className='bg-blue shadow-xl'>
       <nav className='container mx-auto p-4 flex items-center justify-between flex-w'>
-        <Link className='flex items-center mx-4' to='/btca-app/'>
+        <Link className='flex items-center mx-4' to='/'>
           <img
             className='h-16'
             src={require('../../assets/img/Coats_of_arms_of_Belgium_Military_Forces.png')}
@@ -16,21 +16,15 @@ const HeaderNav = () => {
         </Link>
 
         <div>
-          <HeaderLink
-            title='Aisance Numérique'
-            path='/btca-app/digital-fluency'
-          />
+          <HeaderLink title='Aisance Numérique' path='/digital-fluency' />
           <HeaderLink
             title='Orientation Spatiale'
-            path='/btca-app/spatial-orientation'
+            path='/spatial-orientation'
           />
-          <HeaderLink title='Mémoire des mots' path='/btca-app/words-memory' />
-          <HeaderLink title='Raisonnement' path='/btca-app/reasoning' />
-          <HeaderLink
-            title="Détection d'erreurs"
-            path='/btca-app/errors-detection'
-          />
-          <HeaderLink title='Test Complet' path='/btca-app/full-test' />
+          <HeaderLink title='Mémoire des mots' path='/words-memory' />
+          <HeaderLink title='Raisonnement' path='/reasoning' />
+          <HeaderLink title="Détection d'erreurs" path='/errors-detection' />
+          <HeaderLink title='Test Complet' path='/full-test' />
         </div>
       </nav>
     </header>

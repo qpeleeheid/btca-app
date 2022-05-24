@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import { HashRouter, Route, Routes } from 'react-router-dom';
 import Home from './pages/Home';
 import DigitalFluency from './pages/digital-fluency';
 import DigitalFluencyExample from './pages/digital-fluency/DigitalFluencyExample';
@@ -21,7 +21,7 @@ import ErrorsDetectionTest from './pages/errors-detection/ErrorsDetectionTest';
 
 function App() {
   return (
-    <BrowserRouter>
+    <HashRouter>
       <Routes>
         <Route path='/btca-app/' element={<Home />} />
         {/* DIGITAL FLUENCY TEST ROUTES */}
@@ -64,7 +64,7 @@ function App() {
         <Route path='/btca-app/full-test' element={<FullTest />} />
         <Route path='*' element={<NotFound />} />
       </Routes>
-    </BrowserRouter>
+    </HashRouter>
   );
 }
 

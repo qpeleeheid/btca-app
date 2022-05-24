@@ -2,13 +2,13 @@ import React from 'react';
 import HeaderNav from '../../components/header/HeaderNav';
 import WiP from '../../components/WiP';
 
-const FullTest = () => {
+const DigitalFluencyExample = () => {
   return (
-    <div className='flex flex-col h-screen'>
+    <>
       <HeaderNav />
-      <WiP title='Test complet' />
-    </div>
+      <WiP title="Example du test d'aisance numérique" />
+    </>
   );
 };
 
-export default FullTest;
+export default DigitalFluencyExample;

@@ -5,7 +5,7 @@ import HeaderLink from './HeaderLink';
 const HeaderNav = () => {
   return (
     <header className='bg-blue shadow-xl'>
-      <nav className='container mx-auto p-4 flex items-center justify-between'>
+      <nav className='container mx-auto p-4 flex items-center justify-between flex-w'>
         <Link className='flex items-center mx-4' to='/btca-app/'>
           <img
             className='h-16'

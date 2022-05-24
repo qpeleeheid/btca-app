@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import HeaderNav from '../components/Header/HeaderNav';
+import HeaderNav from '../components/header/HeaderNav';
 
 const NotFound = () => {
   return (

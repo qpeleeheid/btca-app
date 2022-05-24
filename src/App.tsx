@@ -2,7 +2,7 @@ import React from 'react';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Home from './pages/Home';
 import DigitalFluency from './pages/digital-fluency';
-import DigitalFluencyRules from './pages/digital-fluency/DigitalFluencyRules';
+import DigitalFluencyExample from './pages/digital-fluency/DigitalFluencyExample';
 import DigitalFluencyTest from './pages/digital-fluency/DigitalFluencyTest';
 import SpatialOrientation from './pages/spatial-orientation';
 import SpatialOrientationRules from './pages/spatial-orientation/SpatialOrientationRules';
@@ -24,11 +24,17 @@ function App() {
     <BrowserRouter>
       <Routes>
         <Route path='/btca-app/' element={<Home />} />
-        <Route path='/btca-app/digital-fluency' element={<DigitalFluency />}>
-          <Route index element={<DigitalFluencyRules />} />
-          <Route path='rules' element={<DigitalFluencyRules />} />
-          <Route path='test' element={<DigitalFluencyTest />} />
-        </Route>
+        {/* DIGITAL FLUENCY TEST ROUTES */}
+        <Route path='/btca-app/digital-fluency' element={<DigitalFluency />} />
+        <Route
+          path='/btca-app/digital-fluency/example'
+          element={<DigitalFluencyExample />}
+        />
+        <Route
+          path='/btca-app/digital-fluency/test'
+          element={<DigitalFluencyTest />}
+        />
+        {/* SPATIAL ORIENTATION TEST ROUTES */}
         <Route
           path='/btca-app/spatial-orientation'
           element={<SpatialOrientation />}
@@ -37,16 +43,19 @@ function App() {
           <Route path='rules' element={<SpatialOrientationRules />} />
           <Route path='test' element={<SpatialOrientationTest />} />
         </Route>
+        {/* WORDS MEMORY TEST ROUTES */}
         <Route path='/btca-app/words-memory' element={<WordsMemory />}>
           <Route index element={<WordsMemoryRules />} />
           <Route path='rules' element={<WordsMemoryRules />} />
           <Route path='test' element={<WordsMemoryTest />} />
         </Route>
+        {/* REASONING TEST ROUTES */}
         <Route path='/btca-app/reasoning' element={<Reasoning />}>
           <Route index element={<ReasoningRules />} />
           <Route path='rules' element={<ReasoningRules />} />
           <Route path='test' element={<ReasoningTest />} />
         </Route>
+        {/* ERRORS DETECTION TEST ROUTES */}
         <Route path='/btca-app/errors-detection' element={<ErrorsDetection />}>
           <Route index element={<ErrorsDetectionRules />} />
           <Route path='rules' element={<ErrorsDetectionRules />} />

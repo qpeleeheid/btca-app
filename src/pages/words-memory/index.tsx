@@ -1,6 +1,6 @@
 import React from 'react';
 import { Outlet } from 'react-router-dom';
-import HeaderNav from '../../components/Header/HeaderNav';
+import HeaderNav from '../../components/header/HeaderNav';
 
 const WordsMemory = () => {
   return (

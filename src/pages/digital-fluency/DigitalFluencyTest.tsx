@@ -6,7 +6,7 @@ import { Answer, ErrorReport } from '../../js/digital-fluency-test/Question';
 import { Test } from '../../js/digital-fluency-test/Test';
 
 const DigitalFluencyTest = () => {
-  const [test] = useState(new Test(30, 2));
+  const [test] = useState(new Test(60, 60));
   const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
   const [isFinished, setIsFinished] = useState(false);
 

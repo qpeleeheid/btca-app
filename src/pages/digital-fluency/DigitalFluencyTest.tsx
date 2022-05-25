@@ -2,11 +2,12 @@ import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import QuestionCard from '../../components/digital-fluency/QuestionCard';
 import ScoreReport from '../../components/digital-fluency/ScoreReport';
+import { DIGITAL_FLUENCY_DURATION } from '../../config/testsConfig';
 import { Answer, ErrorReport } from '../../js/digital-fluency-test/Question';
 import { Test } from '../../js/digital-fluency-test/Test';
 
 const DigitalFluencyTest = () => {
-  const [test] = useState(new Test(60, 60));
+  const [test] = useState(new Test(DIGITAL_FLUENCY_DURATION, 60));
   const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
   const [isFinished, setIsFinished] = useState(false);
 
@@ -42,7 +43,7 @@ const DigitalFluencyTest = () => {
     <main className='h-screen relative bg-dark-blue flex flex-col justify-center items-center'>
       <Link
         className='absolute top-10 right-10 underline text-orange hover:text-white self-end'
-        to='/btca-app/digital-fluency'
+        to='/digital-fluency'
       >
         Quitter le test
       </Link>

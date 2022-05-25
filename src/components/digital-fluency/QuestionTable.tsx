@@ -1,4 +1,5 @@
 import React, { FC, MouseEventHandler } from 'react';
+import ActionButton from '../ActionButton';
 
 interface QuestionTableProps {
   topLine: string;
@@ -27,12 +28,7 @@ const QuestionTable: FC<QuestionTableProps> = ({
           <div className='p-2 w-1/3 text-center'>{botLine}</div>
         </div>
       </div>
-      <button
-        className='py-4 px-8 mx-auto rounded bg-blue text-white hover:bg-dark-blue'
-        onClick={handleNextClick}
-      >
-        Suivant
-      </button>
+      <ActionButton text='Suivant' handleAction={handleNextClick} />
     </>
   );
 };

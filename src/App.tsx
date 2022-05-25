@@ -5,7 +5,7 @@ import DigitalFluency from './pages/digital-fluency';
 import DigitalFluencyExample from './pages/digital-fluency/DigitalFluencyExample';
 import DigitalFluencyTest from './pages/digital-fluency/DigitalFluencyTest';
 import SpatialOrientation from './pages/spatial-orientation';
-import SpatialOrientationRules from './pages/spatial-orientation/SpatialOrientationRules';
+import SpatialOrientationExample from './pages/spatial-orientation/SpatialOrientationExample';
 import SpatialOrientationTest from './pages/spatial-orientation/SpatialOrientationTest';
 import NotFound from './pages/NotFound';
 import WordsMemory from './pages/words-memory';
@@ -32,11 +32,16 @@ function App() {
         />
         <Route path='/digital-fluency/test' element={<DigitalFluencyTest />} />
         {/* SPATIAL ORIENTATION TEST ROUTES */}
-        <Route path='/spatial-orientation' element={<SpatialOrientation />}>
-          <Route index element={<SpatialOrientationRules />} />
-          <Route path='rules' element={<SpatialOrientationRules />} />
-          <Route path='test' element={<SpatialOrientationTest />} />
-        </Route>
+        <Route path='/spatial-orientation' element={<SpatialOrientation />} />
+        <Route
+          path='/spatial-orientation/rules'
+          element={<SpatialOrientationExample />}
+        />
+        <Route
+          path='/spatial-orientation/test'
+          element={<SpatialOrientationTest />}
+        />
+
         {/* WORDS MEMORY TEST ROUTES */}
         <Route path='/words-memory' element={<WordsMemory />}>
           <Route index element={<WordsMemoryRules />} />

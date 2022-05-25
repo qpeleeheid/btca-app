@@ -1,6 +1,6 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 import HeaderNav from '../../components/header/HeaderNav';
+import SimpleButton from '../../components/SimpleButton';
 import SimpleLink from '../../components/SimpleLink';
 
 const DigitalFluency = () => {
@@ -50,12 +50,7 @@ const DigitalFluency = () => {
               </div>
               <SimpleLink title='Voir un exemple' relativePath='example' />
             </div>
-            <Link
-              className='my-4 py-4 px-10 mx-auto rounded bg-blue text-white hover:bg-dark-blue'
-              to='test'
-            >
-              Commencer le test
-            </Link>
+            <SimpleButton title='Commencer le test' relativePath='test' />
           </div>
         </div>
       </main>

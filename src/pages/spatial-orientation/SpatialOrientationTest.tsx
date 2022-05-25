@@ -36,10 +36,10 @@ const SpatialOrientationTest = () => {
   }, []);
 
   return (
-    <main className='h-screen relative bg-dark-blue flex flex-col justify-center items-center'>
+    <main className='min-h-screen relative bg-dark-blue flex flex-col justify-center items-center p-4'>
       <Link
         className='absolute top-10 right-10 underline text-orange hover:text-white self-end'
-        to='/digital-fluency'
+        to='/spatial-orientation'
       >
         Quitter le test
       </Link>

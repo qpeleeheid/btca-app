@@ -24,7 +24,7 @@ const SpatialOrientation = () => {
               </div>
               <div className='my-2'>
                 <h2 className='mb-2 text-2xl'>Définition</h2>
-                <p>
+                <div>
                   Sur l’écran 1, deux règles sont présentées. Ces règles
                   déterminent la direction et la couleur des flèches sur l’écran
                   2.{' '}
@@ -102,7 +102,7 @@ const SpatialOrientation = () => {
                   <br />
                   Vous devez comparer les combinaisons de flèches avec les
                   règles.
-                </p>
+                </div>
               </div>
               <SimpleLink title='Voir un exemple' relativePath='example' />
             </div>

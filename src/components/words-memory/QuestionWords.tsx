@@ -21,25 +21,25 @@ const QuestionWords: FC<QuestionWordsProps> = ({
       </div>
       <div className='flex justify-center'>
         <button
-          className='py-4 px-8 mx-auto rounded bg-blue text-white hover:bg-dark-blue'
+          className='mx-2 py-4 px-8 rounded bg-blue text-white hover:bg-dark-blue'
           onClick={() => handleAnswerClick(0)}
         >
           0
         </button>
         <button
-          className='py-4 px-8 mx-auto rounded bg-blue text-white hover:bg-dark-blue'
+          className='mx-2 py-4 px-8 rounded bg-blue text-white hover:bg-dark-blue'
           onClick={() => handleAnswerClick(1)}
         >
           1
         </button>
         <button
-          className='py-4 px-8 mx-auto rounded bg-blue text-white hover:bg-dark-blue'
+          className='mx-2 py-4 px-8 rounded bg-blue text-white hover:bg-dark-blue'
           onClick={() => handleAnswerClick(2)}
         >
           2
         </button>
         <button
-          className='py-4 px-8 mx-auto rounded bg-blue text-white hover:bg-dark-blue'
+          className='mx-2 py-4 px-8 rounded bg-blue text-white hover:bg-dark-blue'
           onClick={() => handleAnswerClick(3)}
         >
           3

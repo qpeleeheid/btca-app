@@ -20,7 +20,7 @@ const ScoreReport: FC<ScoreReportProps> = ({ test }) => {
       {test.errorReports.map(({ question, chosenAnswer }, index) => {
         return (
           <div
-            className='py-2 flex justify-between items-center border-b border-white'
+            className='py-2 flex justify-between items-center border-b border-white last:border-none'
             key={index}
           >
             <div>Question {test.questions.indexOf(question) + 1}</div>

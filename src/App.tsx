@@ -12,7 +12,7 @@ import WordsMemory from './pages/words-memory';
 import Reasoning from './pages/reasoning';
 import ErrorsDetection from './pages/errors-detection';
 import FullTest from './pages/full-test';
-import WordsMemoryRules from './pages/words-memory/WordsMemoryRules';
+import WordsMemoryExample from './pages/words-memory/WordsMemoryExample';
 import WordsMemoryTest from './pages/words-memory/WordsMemoryTest';
 import ReasoningRules from './pages/reasoning/ReasoningRules';
 import ReasoningTest from './pages/reasoning/ReasoningTest';
@@ -43,11 +43,9 @@ function App() {
         />
 
         {/* WORDS MEMORY TEST ROUTES */}
-        <Route path='/words-memory' element={<WordsMemory />}>
-          <Route index element={<WordsMemoryRules />} />
-          <Route path='rules' element={<WordsMemoryRules />} />
-          <Route path='test' element={<WordsMemoryTest />} />
-        </Route>
+        <Route path='/words-memory' element={<WordsMemory />} />
+        <Route path='/words-memory/example' element={<WordsMemoryExample />} />
+        <Route path='/words-memory/test' element={<WordsMemoryTest />} />
         {/* REASONING TEST ROUTES */}
         <Route path='/reasoning' element={<Reasoning />}>
           <Route index element={<ReasoningRules />} />

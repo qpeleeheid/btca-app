@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/btca-app/static/css/main.91b0c69e.css",
-    "main.js": "/btca-app/static/js/main.d202abe4.js",
+    "main.css": "/btca-app/static/css/main.1cc3b147.css",
+    "main.js": "/btca-app/static/js/main.c548c532.js",
     "static/media/Coats_of_arms_of_Belgium_Military_Forces.png": "/btca-app/static/media/Coats_of_arms_of_Belgium_Military_Forces.669db8e906b3cf73d40d.png",
     "index.html": "/btca-app/index.html",
-    "main.91b0c69e.css.map": "/btca-app/static/css/main.91b0c69e.css.map",
-    "main.d202abe4.js.map": "/btca-app/static/js/main.d202abe4.js.map"
+    "main.1cc3b147.css.map": "/btca-app/static/css/main.1cc3b147.css.map",
+    "main.c548c532.js.map": "/btca-app/static/js/main.c548c532.js.map"
   },
   "entrypoints": [
-    "static/css/main.91b0c69e.css",
-    "static/js/main.d202abe4.js"
+    "static/css/main.1cc3b147.css",
+    "static/js/main.c548c532.js"
   ]
 }
